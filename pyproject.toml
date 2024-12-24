@@ -2,11 +2,12 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Add your description here"
+authors = [
+  {name = "Ruslan Bogomolov", email = "2bgmlv@gmail.com"},
+]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "prompt>=0.4.1",
-]
+dependencies = ["prompt>=0.4.1"]
 
 [build-system]
 requires = ["hatchling"]
@@ -16,10 +17,12 @@ build-backend = "hatchling.build"
 packages = ["brain_games"]
 
 [dependency-groups]
-dev = [
-    "ruff>=0.8.3",
-]
+dev = ["ruff>=0.8.3"]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"

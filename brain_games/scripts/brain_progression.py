@@ -4,7 +4,7 @@ from brain_games.greeting import greet
 
 
 def main():
-    game_type = "even"
+    game_type = "progression"
     greet()
     user_name = welcome_user()
     run_game(user_name, game_type)
