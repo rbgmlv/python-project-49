@@ -1,6 +1,7 @@
+*.pyc
+__pycache__/
 .venv/
 .vscode/
-__pycache__/
-dist/
 .cast
 .DS_Store
+*.ruff_cache
