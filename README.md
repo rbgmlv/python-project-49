@@ -50,7 +50,7 @@ brain-prime
 
 **brain-even**
 
-[![asciicast](https://asciinema.org/a/B5d8QbgNvbMDrQoSsfplFEvS1.svg)](https://asciinema.org/a/B5d8QbgNvbMDrQoSsfplFEvS1)
+[![asciicast](https://asciinema.org/a/VEMs1LkmY6q4dLEYS3pD13xxA.svg)](https://asciinema.org/a/VEMs1LkmY6q4dLEYS3pD13xxA)
 
 **brain-calc**
 
