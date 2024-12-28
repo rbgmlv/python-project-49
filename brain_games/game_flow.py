@@ -2,7 +2,7 @@ import re
 
 import prompt
 
-from brain_games.settings import (
+from brain_games.constants import (
     ALLOWED_ANSWERS,
     GAME_DESCRIPTION,
     ROUNDS_COUNT,
