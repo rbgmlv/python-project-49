@@ -1,4 +1,3 @@
-import importlib
 import re
 
 import prompt
@@ -20,10 +19,8 @@ def welcome_user():
     return name
 
 
-def load_game(game_type):
-    game = importlib.import_module(f"brain_games.games.{game_type}")
+def describe_game(game_type):
     print(GAME_DESCRIPTION[game_type])
-    return game
 
 
 def ask_question(game):
@@ -56,10 +53,11 @@ def is_correct(right_answer, user_answer) -> bool:
     return True if user_answer == right_answer else False
 
 
-def run_game(game_type):
+def run_game(game):
     greet()
     user_name = welcome_user()
-    game = load_game(game_type)
+    game_type = game.__name__.split('.')[-1]
+    describe_game(game_type)
     right_answers_count = 0
     while right_answers_count < ROUNDS_COUNT:
         right_answer = ask_question(game)

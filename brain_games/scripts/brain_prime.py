@@ -1,9 +1,9 @@
+import brain_games.games.prime as prime_game
 from brain_games.game_flow import run_game
 
 
 def main():
-    game_type = "prime"
-    run_game(game_type)
+    run_game(prime_game)
 
 
 if __name__ == "__main__":

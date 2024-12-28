@@ -1,9 +1,9 @@
+import brain_games.games.even as even_game
 from brain_games.game_flow import run_game
 
 
 def main():
-    game_type = "even"
-    run_game(game_type)
+    run_game(even_game)
 
 
 if __name__ == "__main__":
