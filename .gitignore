@@ -5,3 +5,4 @@ __pycache__/
 .cast
 .DS_Store
 *.ruff_cache
+.python-version
