@@ -75,6 +75,6 @@ def run_game(game):
             f"Correct answer was '{right_answer}'."
         )
         print(f"Let's try again, {user_name}!")
-        break
+        return right_answers_count
     if right_answers_count == ROUNDS_COUNT:
         print(f"Congratulations, {user_name}!")
