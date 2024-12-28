@@ -10,6 +10,16 @@ from brain_games.settings import (
 )
 
 
+def greet():
+    print('Welcome to the Brain Games!')
+
+
+def welcome_user():
+    name = prompt.string("May I have your name? ")
+    print(f'Hello, {name}!')
+    return name
+
+
 def load_game(game_type):
     game = importlib.import_module(f"brain_games.games.{game_type}")
     print(GAME_DESCRIPTION[game_type])
@@ -46,7 +56,9 @@ def is_correct(right_answer, user_answer) -> bool:
     return True if user_answer == right_answer else False
 
 
-def run_game(user_name, game_type):
+def run_game(game_type):
+    greet()
+    user_name = welcome_user()
     game = load_game(game_type)
     right_answers_count = 0
     while right_answers_count < ROUNDS_COUNT:
