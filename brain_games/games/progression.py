@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.settings import PROGRESSION_LENGTH
+from brain_games.constants import PROGRESSION_LENGTH
 
 
 def define_question():
