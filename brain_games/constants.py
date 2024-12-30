@@ -8,6 +8,4 @@ GAME_DESCRIPTION = {
     "prime": 'Answer "yes" if given number is prime. Otherwise answer "no".'
 }
 
-ALLOWED_ANSWERS = ["yes", "no"]
-
 PROGRESSION_LENGTH = 10

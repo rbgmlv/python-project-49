@@ -16,10 +16,6 @@ def is_prime(num: int) -> bool:
 
 
 def define_question():
-    random_number = randint(1, 1000)
-    question = str(random_number)
-    if is_prime(random_number):
-        right_answer = "yes"
-    else:
-        right_answer = "no"
-    return question, right_answer
+    question = randint(1, 1000)
+    right_answer = "yes" if is_prime(question) else "no"
+    return str(question), right_answer

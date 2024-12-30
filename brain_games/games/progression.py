@@ -18,4 +18,4 @@ def define_question():
     for i in range(0, PROGRESSION_LENGTH):
         question += str(progression[i]) + ' '
     question.strip()
-    return question, right_answer
+    return question, str(right_answer)

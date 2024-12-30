@@ -1,8 +1,7 @@
-from brain_games.game_flow import greet, welcome_user
+from brain_games.game_flow import welcome_user
 
 
 def main():
-    greet()
     welcome_user()
 
 

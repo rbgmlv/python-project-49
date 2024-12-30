@@ -6,10 +6,6 @@ def is_even(num: int) -> bool:
 
 
 def define_question():
-    random_number = randint(1, 100)
-    question = str(random_number)
-    if is_even(random_number):
-        right_answer = "yes"
-    else:
-        right_answer = "no"
-    return question, right_answer
+    question = randint(1, 100)
+    right_answer = "yes" if is_even(question) else "no"
+    return str(question), right_answer
