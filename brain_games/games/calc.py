@@ -1,5 +1,7 @@
 from random import randint
 
+GAME_RULE = 'What is the result of the expression?'
+
 
 def define_question():
     random_number_1 = randint(1, 30)

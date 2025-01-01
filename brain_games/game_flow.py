@@ -1,7 +1,6 @@
 import prompt
 
 from brain_games.constants import (
-    GAME_DESCRIPTION,
     ROUNDS_COUNT,
 )
 
@@ -15,8 +14,7 @@ def welcome_user():
 
 def run_game(game):
     user_name = welcome_user()
-    game_type = game.__name__.split('.')[-1]
-    print(GAME_DESCRIPTION[game_type])
+    print(game.GAME_RULE)
     right_answers_count = 0
     while right_answers_count < ROUNDS_COUNT:
         question, right_answer = game.define_question()

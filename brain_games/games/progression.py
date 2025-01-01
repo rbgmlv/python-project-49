@@ -2,6 +2,8 @@ from random import randint
 
 from brain_games.constants import PROGRESSION_LENGTH
 
+GAME_RULE = 'What number is missing in the progression?'
+
 
 def define_question():
     first_element = randint(0, 30)
