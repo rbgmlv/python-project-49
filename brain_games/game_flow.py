@@ -6,9 +6,9 @@ from brain_games.constants import (
 
 
 def welcome_user():
-    print('Welcome to the Brain Games!')
+    print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
+    print(f"Hello, {name}!")
     return name
 
 
@@ -26,9 +26,9 @@ def run_game(game):
             continue
         print(
             f"'{user_answer}' is wrong answer ;(. "
-            f"Correct answer was '{right_answer}'."
+            f"Correct answer was '{right_answer}'.\n"
+            f"Let's try again, {user_name}!"
         )
-        print(f"Let's try again, {user_name}!")
         return right_answers_count
     if right_answers_count == ROUNDS_COUNT:
         print(f"Congratulations, {user_name}!")
