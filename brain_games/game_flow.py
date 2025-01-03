@@ -30,5 +30,4 @@ def run_game(game):
             f"Let's try again, {user_name}!"
         )
         return right_answers_count
-    if right_answers_count == ROUNDS_COUNT:
-        print(f"Congratulations, {user_name}!")
+    print(f"Congratulations, {user_name}!")
