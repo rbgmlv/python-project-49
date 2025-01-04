@@ -1,20 +1,16 @@
+import math
 from random import randint
 
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num: int) -> bool:
-    if num == 1:
+    if num < 2:
         return False
-    stack = []
-    x = 1
-    while x <= num:
-        if num % x == 0:
-            stack.append(x)
-        if len(stack) > 2:
-            break
-        x += 1
-    return True if len(stack) < 3 else False
+    for i in range(2, int(math.sqrt(num)) + 1):
+        if num % i == 0:
+            return False
+    return True
 
 
 def define_question():
